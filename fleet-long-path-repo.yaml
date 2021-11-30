@@ -1,0 +1,10 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: fleet-long-path
+  namespace: fleet-default
+spec:
+  repo: https://github.com/scramados/fleet-long-path.git
+  branch: main
+  paths:
+    - /fleet-super-duper-long-bundle-name-of-more-than-sixty-four-characters
